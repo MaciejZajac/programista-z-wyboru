@@ -37,6 +37,10 @@ const Popup = ({ closePopup }) => (
             <a href="https://github.com/MaciejZajac/programista-z-wyboru/tree/devel">
                 github
             </a>
+            <br />
+            <a href="https://oldmaciejzajacportfolio.netlify.com/">
+                Poprzednia strona
+            </a>
         </StyledContainer>
     </StyledPopup>
 );
