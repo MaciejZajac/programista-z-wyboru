@@ -4,17 +4,22 @@ export const StyledProjects = styled.div`
     width: 100vw;
     min-height: 100vh;
     padding-top: 50px;
+    padding-bottom: 100px;
     position: relative;
-    border-top: 1px solid black;
 
     text-align: center;
     color: ${({ theme }) => theme.black};
-
-    ${({ theme }) => theme.mq.tablet} {
-        align-items: flex-start;
-    }
 `;
 /* background-image: linear-gradient(
+        ${({ theme }) => theme.mq.tablet} {
+            align-items: flex-start;
+            background-image: linear-gradient(
+                175deg,
+                ${({ theme }) => theme.white},
+                ${({ theme }) => theme.white} 900px,
+                ${({ theme }) => theme.primary} 900px
+            );
+        }
             135deg,
             ${({ theme }) => theme.white},
             ${({ theme }) => theme.white} 185px,

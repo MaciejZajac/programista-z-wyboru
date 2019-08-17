@@ -2,6 +2,9 @@ import React from 'react';
 import MainTemplate from 'templates/MainTemplate/MainTemplate';
 import Hero from 'templates/HeroTemplate/HeroTemplate';
 import Projects from 'templates/Projects/Projects';
+import Skills from '../templates/Skills/Skills';
+import Contact from '../templates/Contact/Contact';
+import Footer from '../templates/Footer/Footer';
 // import styled from 'styled-components';
 
 // const Wrapper = styled.div`
@@ -28,6 +31,9 @@ const IndexPage = () => (
     <MainTemplate>
         <Hero />
         <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
     </MainTemplate>
 );
 
