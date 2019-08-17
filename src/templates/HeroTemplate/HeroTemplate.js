@@ -10,19 +10,22 @@ const StyledHero = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    text-align: center;
     color: ${({ theme }) => theme.primary};
 
     ${({ theme }) => theme.mq.tablet} {
-        padding: 100px;
+        padding: 200px 150px;
         align-items: flex-start;
+        justify-content: flex-start;
         background-image: linear-gradient(
-            135deg,
-            ${({ theme }) => theme.white},
-            ${({ theme }) => theme.white} 800px,
-            ${({ theme }) => theme.primary} 800px,
-            ${({ theme }) => theme.primary}
+            165deg,
+            ${({ theme }) => theme.primary},
+            ${({ theme }) => theme.primary} 150px,
+            ${({ theme }) => theme.white} 150px,
+            ${({ theme }) => theme.white} 650px,
+            ${({ theme }) => theme.primary} 650px,
+            ${({ theme }) => theme.primary} 1050px,
+            ${({ theme }) => theme.white} 1050px,
+            ${({ theme }) => theme.white}
         );
     }
 `;

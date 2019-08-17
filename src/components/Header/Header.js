@@ -6,10 +6,10 @@ import MobileMenu from 'components/MobileMenu/MobileMenu';
 import Button from '../Button/Button';
 import SocialMenu from '../SocialMenu/SocialMenu';
 
-const StyledHeader = styled.nav`
+const StyledWrapper = styled.nav`
     padding: 20px;
     display: flex;
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 0;
     top: 0;
@@ -17,6 +17,14 @@ const StyledHeader = styled.nav`
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
+`;
+
+const StyledLogo = styled(Logo)`
+    position: relative;
+    z-index: 9999;
+    ${({ theme }) => theme.mq.desktop} {
+        width: 150px;
+    }
 `;
 
 const FaqButton = styled(Button)`
@@ -40,10 +48,6 @@ const ButtonsWrapper = styled.div`
         align-items: center;
     }
 `;
-/* ${({ theme }) => theme.mq.tablet} {
-        display: flex;
-        align-items: center;
-    } */
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,15 +57,15 @@ const Header = () => {
     };
 
     return (
-        <StyledHeader>
-            <Logo />
+        <StyledWrapper>
+            <StyledLogo />
             <Hamburger onClick={toggleMobileMenu} isMenuOpen={isMenuOpen} />
             <MobileMenu isMenuOpen={isMenuOpen} />
             <ButtonsWrapper>
                 <SocialMenu />
                 <FaqButton>Faq</FaqButton>
             </ButtonsWrapper>
-        </StyledHeader>
+        </StyledWrapper>
     );
 };
 
