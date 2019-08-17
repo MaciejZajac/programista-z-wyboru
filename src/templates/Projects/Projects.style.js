@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledProjects = styled.div`
-    width: 100vw;
     min-height: 100vh;
     padding-top: 50px;
     padding-bottom: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
     position: relative;
 
     text-align: center;
@@ -75,5 +76,6 @@ export const StyledSubHeader = styled.h2`
 export const ProjectSection = styled.div`
     ${({ theme }) => theme.mq.desktop} {
         display: flex;
+        justify-content: center;
     }
 `;

@@ -7,7 +7,6 @@ const StyledWrapper = styled.div`
     height: 50vh;
     padding: 50px;
     max-width: 1000px;
-    padding-top: 100px;
     margin: 0 auto;
 `;
 // const StyledBackground = styled.div`
@@ -30,8 +29,6 @@ const StyledSkillsWrapper = styled.div`
         flex-wrap: wrap;
     }
 `;
-
-const StyledHead = styled.h1``;
 
 const StyledSkill = styled.div`
     display: flex;
@@ -58,7 +55,6 @@ const StyledGatsby = styled.img`
 
 const Skills = () => (
     <StyledWrapper>
-        <StyledHead>Moje technologie</StyledHead>
         <StyledSkillsWrapper>
             <StyledSkill>
                 <StyledIcon className="fab fa-react fa-2x" />
@@ -90,6 +86,7 @@ const Skills = () => (
             Pozostałe technologie z którymi miałem styczność: Bootstrap,
             Redux/MobX, Webpack
         </div>
+        <br />
         <div>
             Inne: zasady pisania D.R.Y oraz S.O.L.I.D oraz metodyka pisania
             styli BEM

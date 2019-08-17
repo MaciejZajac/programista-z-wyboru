@@ -99,7 +99,6 @@ export const StyledImageRow = styled.div`
 `;
 
 export const StyledButton = styled(Button)`
-    width: 120px;
     margin: 10px;
 `;
 

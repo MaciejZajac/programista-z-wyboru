@@ -33,7 +33,7 @@ const Popup = ({ closePopup }) => (
         <StyledContainer>
             <h3>Strona w wersji alpha</h3>
             Strona tworzona w wolnych chwilach. <br /> Kod strony znajduje się
-            na{' '}
+            na
             <a href="https://github.com/MaciejZajac/programista-z-wyboru/tree/devel">
                 github
             </a>

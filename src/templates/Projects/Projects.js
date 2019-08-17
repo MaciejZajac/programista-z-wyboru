@@ -23,8 +23,8 @@ const Projects = () => {
     const evernoteDescription = {
         subheader: 'Evernote',
         text: [
-            'Aplikacja webowa służąca do robienia notatek.',
-            'Do zapisywania tekstu został wykorzystany Firebase',
+            'Aplikacja webowa służąca do robienia notatek. Taki trochę klon popularnego Evernote',
+            'Do zapisywania tekstu został wykorzystany Firebase oraz framework React.',
         ],
         codeLink:
             'https://bitbucket.org/maciek1997/evernote-react-firebase/src/master/',
@@ -39,7 +39,7 @@ const Projects = () => {
             <ProjectSection>
                 <ProjectRow desciption={mentorDescription} image={Mentor} />
                 <ProjectRow desciption={evernoteDescription} image={Evernote} />
-                <ProjectRow desciption={mentorDescription} image={Mentor} />
+                {/* <ProjectRow desciption={mentorDescription} image={Mentor} /> */}
             </ProjectSection>
         </StyledProjects>
     );

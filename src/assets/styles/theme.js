@@ -5,7 +5,8 @@ const theme = {
     black: 'hsl(0, 0%, 0%)',
     font: {
         size: {
-            xs: '1rem',
+            xxs: '1rem',
+            xs: '1.4rem',
             s: '1.8rem',
             m: '2.6rem',
             l: '4.2rem',

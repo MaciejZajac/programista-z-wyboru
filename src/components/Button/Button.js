@@ -10,7 +10,9 @@ const Button = styled.button`
     font-weight: 700;
     color: ${({ theme }) => theme.black};
     cursor: pointer;
-    font-size: ${({ theme }) => theme.font.size.s};
+    width: auto;
+    white-space: nowrap;
+    font-size: ${({ theme }) => theme.font.size.xs};
 
     border-radius: 15px;
 
@@ -18,7 +20,6 @@ const Button = styled.button`
 
     ${({ theme }) => theme.mq.tablet} {
         padding: 15px 35px;
-        font-size: ${({ theme }) => theme.font.size.s};
     }
 
     &::after {
