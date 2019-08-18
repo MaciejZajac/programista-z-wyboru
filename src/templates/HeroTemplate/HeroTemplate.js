@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from 'components/Button/Button';
-import { Link } from 'react-router-dom';
 
 const StyledHero = styled.div`
     width: 100vw;
@@ -52,9 +51,9 @@ const Hero = () => (
     <StyledHero>
         <Styledh1>Cześć!</Styledh1>
         <StyledHello>Z tej strony Maciek</StyledHello>
-        <Link to="/#About">
+        <a href="#About">
             <StyledButton>Kim jestem</StyledButton>
-        </Link>
+        </a>
     </StyledHero>
 );
 

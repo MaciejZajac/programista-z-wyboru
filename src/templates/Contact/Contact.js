@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Profilowe from 'assets/images/profilowe.jpg';
-// import Button from '../../components/Button/Button';
 
 const StyledWrapper = styled.div`
     min-width: 100vw;
