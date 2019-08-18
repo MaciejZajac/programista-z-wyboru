@@ -49,7 +49,7 @@ export const StyledLinks = styled.div`
 
 export const StyledImage = styled.img`
     width: 200px;
-    height: auto;
+    height: 200px;
     border-radius: 25px;
     cursor: pointer;
     transition: transform 0.25s ease-in-out;
@@ -63,6 +63,7 @@ export const StyledImage = styled.img`
     }
     ${({ theme }) => theme.mq.tablet} {
         width: 250px;
+        height: 250px;
     }
 `;
 

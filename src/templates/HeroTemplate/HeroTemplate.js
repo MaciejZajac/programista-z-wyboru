@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from 'components/Button/Button';
+import { Link } from 'react-router-dom';
 
 const StyledHero = styled.div`
     width: 100vw;
     height: 100vh;
     position: relative;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -50,7 +52,9 @@ const Hero = () => (
     <StyledHero>
         <Styledh1>Cześć!</Styledh1>
         <StyledHello>Z tej strony Maciek</StyledHello>
-        <StyledButton>Kim jestem</StyledButton>
+        <Link to="/#About">
+            <StyledButton>Kim jestem</StyledButton>
+        </Link>
     </StyledHero>
 );
 

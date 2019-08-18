@@ -1,6 +1,7 @@
 import React from 'react';
 import Mentor from 'assets/images/mentorscreen.png';
 import Evernote from 'assets/images/evernote.png';
+import SpaceX from 'assets/images/spacex-logo.jpeg';
 
 import {
     StyledProjects,
@@ -30,6 +31,15 @@ const Projects = () => {
             'https://bitbucket.org/maciek1997/evernote-react-firebase/src/master/',
         webLink: 'https://evernote-like.netlify.com/',
     };
+    const spaceXDescription = {
+        subheader: 'SpaceX',
+        text: [
+            'Aplikacja webowa przedstawiająca wszystkie starty rakiet SpaceX.',
+            'Do jej napisania został uzyty GraphQL, Apollo, React',
+        ],
+        codeLink: 'https://github.com/MaciejZajac/spacex-launched/tree/devel',
+        webLink: 'https://vast-inlet-11096.herokuapp.com/',
+    };
     return (
         <StyledProjects>
             <StyledSubHeader>
@@ -39,7 +49,7 @@ const Projects = () => {
             <ProjectSection>
                 <ProjectRow desciption={mentorDescription} image={Mentor} />
                 <ProjectRow desciption={evernoteDescription} image={Evernote} />
-                {/* <ProjectRow desciption={mentorDescription} image={Mentor} /> */}
+                <ProjectRow desciption={spaceXDescription} image={SpaceX} />
             </ProjectSection>
         </StyledProjects>
     );
