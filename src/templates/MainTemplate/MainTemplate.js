@@ -11,7 +11,7 @@ const MainTemplate = ({ children }) => {
 
     useEffect(() => {
         setTimeout(() => {
-            setPopupVisible(false);
+            setPopupVisible(true);
         }, 1000);
     }, []);
 
