@@ -2,33 +2,25 @@ import styled from 'styled-components';
 
 export const StyledProjects = styled.div`
     min-height: 100vh;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    max-width: 1100px;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
+    /* max-width: 1100px; */
     margin: 0 auto;
     position: relative;
-
     text-align: center;
+
     color: ${({ theme }) => theme.black};
+    ${({ theme }) => theme.mq.desktop} {
+        padding: 0 50px;
+        padding-bottom: 50px;
+        background-image: linear-gradient(
+            165deg,
+            ${({ theme }) => theme.primary},
+            ${({ theme }) => theme.primary} 131px,
+            ${({ theme }) => theme.white} 131px
+        );
+    }
 `;
-/* background-image: linear-gradient(
-        ${({ theme }) => theme.mq.tablet} {
-            align-items: flex-start;
-            background-image: linear-gradient(
-                175deg,
-                ${({ theme }) => theme.white},
-                ${({ theme }) => theme.white} 900px,
-                ${({ theme }) => theme.primary} 900px
-            );
-        }
-            135deg,
-            ${({ theme }) => theme.white},
-            ${({ theme }) => theme.white} 185px,
-            ${({ theme }) => theme.primary} 185px,
-            ${({ theme }) => theme.primary} 800px,
-            ${({ theme }) => theme.white} 800px,
-            ${({ theme }) => theme.white}
-        ); */
 
 export const HeaderWrapper = styled.div`
     display: flex;
@@ -60,6 +52,7 @@ export const StyledHeader = styled.h1`
 
 export const StyledSubHeader = styled.h2`
     margin: 0;
+    text-align: right;
     padding-bottom: 20px;
     font-size: ${({ theme }) => theme.font.size.s};
     color: ${({ theme }) => theme.black};
