@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Hamburger from 'components/Hamburger/Hamburger';
 import Logo from 'components/Logo/Logo';
 import MobileMenu from 'components/MobileMenu/MobileMenu';
-// import Button from '../Button/Button';
+import Button from '../Button/Button';
 import SocialMenu from '../SocialMenu/SocialMenu';
 
 const StyledWrapper = styled.nav`
@@ -27,15 +28,15 @@ const StyledLogo = styled(Logo)`
     }
 `;
 
-// const FaqButton = styled(Button)`
-//     display: none;
-//     ${({ theme }) => theme.mq.tablet} {
-//         display: inline-block;
-//     }
-//     &::before {
-//         background-color: ${({ theme }) => theme.primary};
-//     }
-// `;
+const FaqButton = styled(Button)`
+    display: none;
+    ${({ theme }) => theme.mq.tablet} {
+        display: inline-block;
+    }
+    &::before {
+        background-color: ${({ theme }) => theme.primary};
+    }
+`;
 
 const ButtonsWrapper = styled.div`
     display: flex;
@@ -49,6 +50,10 @@ const ButtonsWrapper = styled.div`
     }
 `;
 
+const StyledLink = styled(Link)`
+    text-decoration: none;
+`;
+
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -58,12 +63,16 @@ const Header = () => {
 
     return (
         <StyledWrapper>
-            <StyledLogo />
+            <StyledLink to="/">
+                <StyledLogo />
+            </StyledLink>
             <Hamburger onClick={toggleMobileMenu} isMenuOpen={isMenuOpen} />
             <MobileMenu isMenuOpen={isMenuOpen} />
             <ButtonsWrapper>
                 <SocialMenu />
-                {/* <FaqButton>Faq</FaqButton> */}
+                <Link to="/faq">
+                    <FaqButton>Faq</FaqButton>
+                </Link>
             </ButtonsWrapper>
         </StyledWrapper>
     );
